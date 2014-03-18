@@ -19,12 +19,7 @@ var show = function(response) {
   response.end(html);
 };
 
-<<<<<<< HEAD
-		case 'GET':
-			response.end('Kom ihåg!' + items.join(', ') + '\n');
-			break;
-	}
-=======
+
 var server = http.createServer(function(request, response){
   switch (request.method) {
     case 'POST':
@@ -48,7 +43,7 @@ var server = http.createServer(function(request, response){
       show(response);
       break;
   }
->>>>>>> master
+
 });
 
 server.listen(3000);
